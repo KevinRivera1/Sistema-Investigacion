@@ -22,7 +22,7 @@ Este sistema de investigación permite a los investigadores gestionar sus public
 
 
 <div align="center" style="background: white;">
-  <img src="./img/mobile.gif" alt="Sistema de investigación">
+  <img style="background: white;" src="./img/mobile.gif" alt="Sistema de investigación">
 </div>
 
 ## Demo en Vivo
