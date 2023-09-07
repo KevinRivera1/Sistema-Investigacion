@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Boxicons -->
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="./styles/publicaciones.css">
+  <link rel="stylesheet" href="./styles/visualizacionlinea.css">
+
+  <title>Investigación</title>
+</head>
+
+<body>
+
+
+  <!-- SIDEBAR -->
+  <section id="sidebar">
+    <a href="#" class="brand">
+      <img style="width: 60px; margin-right:10px;" src="./img/logoyavirac.png" alt="">
+      <span class="text">Investigación</span>
+    </a>
+    <ul class="side-menu top">
+      <li class="active">
+        <a href="./cardPublicaciones.html">
+          <i class='bx bxs-dashboard'></i>
+          <span class="text">Publicaciones</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-shopping-bag-alt'></i>
+          <span class="text">Lineas de investigación</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-doughnut-chart'></i>
+          <span class="text">Programas</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-message-dots'></i>
+          <span class="text">Proyectos</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bxs-group'></i>
+          <span class="text">Colaboradores</span>
+        </a>
+      </li>
+    </ul>
+    <ul class="side-menu">
+      <li>
+        <a href="#">
+          <i class='bx bxs-cog'></i>
+          <span class="text">Configuración</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="logout">
+          <i class='bx bxs-log-out-circle'></i>
+          <span class="text">Cerrar Sesión</span>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!-- SIDEBAR -->
+
+
+
+  <!-- CONTENT -->
+  <section id="content">
+    <!-- NAVBAR -->
+    <nav>
+      <i class='bx bx-menu'></i>
+      <a href="#" class="nav-link">Buscar</a>
+      <form action="#">
+        <div class="form-input">
+          <input type="search" placeholder="Busca Aquí...">
+          <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+        </div>
+      </form>
+      <div class="data__profile">
+        <small style="color: aliceblue;">Maria Juna</small>
+        <small style="color: rgb(233, 233, 233);">Coordinador de carrera</small>
+      </div>
+
+      <a href="#" class="profile">
+        <img
+          src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+      </a>
+    </nav>
+    <!-- NAVBAR -->
+
+    <!-- MAIN -->
+    <main>
+      <h1 class="titulo__form">Visualizacion Lineas de Investigación</h1>
+      <div class="container">
+        <div class="container opciones">
+          <div class="navbar mt-1 navbar-expand-lg navbar-light bg-light ">
+            <div class="container-fluid">
+              <div class="navbar-collapse justify-content-end">
+                <ul class="navbar-nav">
+                  <li class="nav-item me-2">
+                    <button class="btn btn-outline-primary btn-orange" type="button">
+                      <i class="bi bi-printer"></i> Imprimir
+                    </button>
+                  </li>
+                  <li class="nav-item me-2">
+                    <button class="btn btn-outline-primary btn-yellow" type="button">
+                      <i class="bi bi-box-arrow-up"></i> Exportar
+                    </button>
+                  </li>
+                  <li class="nav-item me-2">
+                    <button class="btn btn-outline-primary btn-green" type="button">
+                      <i class="bi bi-box-arrow-down"></i> Importar
+                    </button>
+                  </li>
+                  <li class="nav-item me-2">
+                    <button class="btn btn-outline-primary btn-purple" type="button" onclick="redireccionar()">
+                      <i class="bi bi-plus"></i> Agregar
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 mx-auto my-4">
+          <div class="input-group mb-3">
+            <form class="d-flex">
+              <select class="form-select seleccionar" aria-label="Seleccionar carrera">
+                <option selected>Seleccionar carrera</option>
+                <option value="carrera1">Carrera 1</option>
+                <option value="carrera2">Carrera 2</option>
+                <option value="carrera3">Carrera 3</option>
+                <!-- Agrega más opciones de carrera aquí -->
+              </select>
+            </form>
+            <input type="text" class="form-control" placeholder="Buscar...">
+            <button class="btn btn-outline-primary" type="button"><i class="bi bi-search"></i></button>
+
+          </div>
+        </div>
+        <table class="table table-bordered text-center">
+          <thead>
+            <tr class="titulo_tabla">
+              <th>Nombre</th>
+              <th>Carrera</th>
+              <th>Fecha de aprobación</th>
+              <th>Estado</th>
+              <th>Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Línea 1</td>
+              <td>Carrera 1</td>
+              <td>2023-06-01</td>
+              <td class="text-success bi bi-dot">Aprobado</td>
+              <td>
+                <a href="#" class="btn btn-sm btn-danger eliminarLinea"><i class="bi bi-trash"></i></a>
+                <a href="#" class="btn btn-sm btn-warning editarLinea"><i class="bi bi-pencil"></i></a>
+                <a href="#" class="btn btn-sm btn-info alertaLinea"><i class="bi bi-eye"></i></a>
+
+              </td>
+            </tr>
+            <tr>
+              <td>Línea 2</td>
+              <td>Carrera 2</td>
+              <td>2023-06-15</td>
+              <td class="text-success bi bi-dot">Aprobado</td>
+              <td>
+                <a href="#" class="btn btn-sm btn-danger eliminarLinea"><i class="bi bi-trash"></i></a>
+
+                <a href="#" class="btn btn-sm btn-warning editarLinea"><i class="bi bi-pencil"></i></a>
+                <a href="#" class="btn btn-sm btn-info alertaLinea"><i class="bi bi-eye"></i></a>
+
+              </td>
+            </tr>
+            <tr>
+              <td>Línea 1</td>
+              <td>Carrera 1</td>
+              <td>2023-06-01</td>
+              <td class="text-success bi bi-dot">Aprobado</td>
+              <td>
+                <a href="#" class="btn btn-sm btn-danger eliminarLinea" id="eliminarLinea"><i
+                    class="bi bi-trash"></i></a>
+
+                <a href="#" class="btn btn-sm btn-warning editarLinea" id="editarLinea"><i class="bi bi-pencil"></i></a>
+                <a href="#" class="btn btn-sm btn-info alertaLinea" id="alertaLinea"><i class="bi bi-eye"></i></a>
+
+              </td>
+            </tr>
+            <tr>
+              <td>Línea 1</td>
+              <td>Carrera 1</td>
+              <td>2023-06-01</td>
+              <td class="text-success bi bi-dot">Aprobado</td>
+              <td>
+                <a href="#" class="btn btn-sm btn-danger eliminarLinea"><i class="bi bi-trash"></i></a>
+
+                <a href="#" class="btn btn-sm btn-warning editarLinea"><i class="bi bi-pencil"></i></a>
+                <a href="#" class="btn btn-sm btn-info alertaLinea"><i class="bi bi-eye"></i></a>
+
+              </td>
+            </tr>
+            <tr>
+              <td>Línea 1</td>
+              <td>Carrera 1</td>
+              <td>2023-06-01</td>
+              <td class="text-success bi bi-dot">Aprobado</td>
+              <td>
+                <a href="#" class="btn btn-sm btn-danger eliminarLinea"><i class="bi bi-trash"></i></a>
+
+                <a href="#" class="btn btn-sm btn-warning editarLinea"><i class="bi bi-pencil"></i></a>
+                <a href="#" class="btn btn-sm btn-info alertaLinea"><i class="bi bi-eye"></i></a>
+
+              </td>
+            </tr>
+            <tr>
+              <td>Línea 1</td>
+              <td>Carrera 1</td>
+              <td>2023-06-01</td>
+              <td class="text-success bi bi-dot">Aprobado</td>
+              <td>
+                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></a>
+
+                <a href="#" class="btn btn-sm btn-warning"><i class="bi bi-pencil"></i></a>
+                <a href="#" class="btn btn-sm btn-info"><i class="bi bi-eye"></i></a>
+
+              </td>
+            </tr>
+            <tr>
+              <td>Línea 1</td>
+              <td>Carrera 1</td>
+              <td>2023-06-01</td>
+              <td class="text-danger bi bi-dot">No Aprobado</td>
+              <td>
+                <a href="#" class="btn btn-sm btn-danger"><i class="bi bi-trash"></i></a>
+
+                <a href="#" class="btn btn-sm btn-warning"><i class="bi bi-pencil"></i></a>
+                <a href="#" class="btn btn-sm btn-info"><i class="bi bi-eye"></i></a>
+
+              </td>
+            </tr>
+            <!-- Agrega más filas con datos aquí -->
+          </tbody>
+        </table>
+        <div aria-label="Paginación">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Anterior</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">5</a></li>
+            <li class="page-item"><a class="page-link" href="#">6</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Siguiente</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+
+
+    <!-- MAIN -->
+  </section>
+  <!-- CONTENT -->
+  <script src="./js/alertas.js"></script>
+  <script src="./js/index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+
+  <script>
+    function redireccionar() {
+      window.location.href = "./formLinea.html";
+    }
+  </script>
+
+</body>
+
+</html>
