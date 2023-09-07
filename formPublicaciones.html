@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+
+    <link rel="stylesheet" href="./styles/publicaciones.css">
+
+    <title>Investigación</title>
+</head>
+
+<body>
+
+
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+        <a href="#" class="brand">
+            <img style="width: 60px; margin-right:10px;" src="./img/logoyavirac.png" alt="">
+            <span class="text">Investigación</span>
+        </a>
+        <ul class="side-menu top">
+            <li class="active">
+                <a href="#">
+                    <i class='bx bxs-dashboard'></i>
+                    <span class="text">Publicaciones</span>
+                </a>
+            </li>
+            <li>
+                <a href="./formLinea.html">
+                    <i class='bx bxs-shopping-bag-alt'></i>
+                    <span class="text">Lineas de investigación</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-doughnut-chart'></i>
+                    <span class="text">Programas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-message-dots'></i>
+                    <span class="text">Proyectos</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class='bx bxs-group'></i>
+                    <span class="text">Colaboradores</span>
+                </a>
+            </li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="#">
+                    <i class='bx bxs-cog'></i>
+                    <span class="text">Configuración</span>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="logout">
+                    <i class='bx bxs-log-out-circle'></i>
+                    <span class="text">Cerrar Sesión</span>
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+
+
+    <!-- CONTENT -->
+    <section id="content">
+        <!-- NAVBAR -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <a href="#" class="nav-link">Buscar</a>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Busca Aquí...">
+                    <button type="submit" class="search-btn"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <div class="data__profile">
+                <small style="color: aliceblue;">Maria Juna</small>
+                <small style="color: rgb(233, 233, 233);">Coordinador de carrera</small>
+            </div>
+
+            <a href="#" class="profile">
+                <img
+                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80">
+            </a>
+        </nav>
+        <!-- NAVBAR -->
+
+        <!-- MAIN -->
+        <h1 class="titulo__form">Formulario Publicaiones</h1>
+        <section class="form__contenedor">
+
+            <form class="form" onsubmit="event.preventDefault()">
+                <div class="form__column">
+                    <div class="form__group">
+                        <label for="titulo" class="form__label">Título</label>
+                        <input type="text" id="titulo" class="form__input" placeholder="Ejm: La Tecnologia Actual">
+                    </div>
+                    <div class="form__group">
+                        <label for="estados" class="form__label">Estado</label>
+                        <select id="estados" class="form__select">
+                            <option value="estado1">Aprobado</option>
+                            <option value="estado2">En Espera</option>
+                            <option value="estado3">En Proceso</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="calendario1" class="form__label">Periodo Academico</label>
+                        <input type="date" id="calendario1" class="form__input">
+                    </div>
+                    <div class="form__group">
+                        <label for="calendario2" class="form__label">Fecha Aprobación</label>
+                        <input type="date" id="calendario2" class="form__input">
+                    </div>
+                    <div class="form__group">
+                        <label for="busqueda" class="form__label">Autores</label>
+                        <div class="input-group">
+                            <input type="text" id="busqueda" class="form__input" placeholder="Busca aquí...">
+                        </div>
+                    </div>
+                </div>
+                <div class="form__column">
+                    <div class="form__group">
+                        <label for="tipo-publicacion" class="form__label">Tipo de Publicación</label>
+                        <select id="tipo-publicacion" class="form__select">
+                            <option value="tipo1">Tecnologico</option>
+                            <option value="tipo2">Cientifico</option>
+                            <option value="tipo3">Reseña</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="carreras" class="form__label">Carreras</label>
+                        <select id="carreras" class="form__select">
+                            <option value="carrera1">Desarrollo de softaware</option>
+                            <option value="carrera2">Marketing</option>
+                            <option value="carrera3">Turismo</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="fecha" class="form__label">Fecha</label>
+                        <input type="date" id="fecha" class="form__input">
+                    </div>
+                    <div class="form__group">
+                        <label for="imagenes" class="form__label">Imágen</label>
+                        <input type="file" id="imagenes" class="form__input">
+                    </div>
+                    <div class="form__group">
+                        <label for="links" class="form__label">Link de Publicación</label>
+                        <input type="text" id="links" class="form__input" placeholder="https://publicacion.com">
+                    </div>
+                </div>
+                <div class="form__group form__group--full-width">
+                    <label for="descripcion" class="form__label">Descripción</label>
+                    <textarea id="descripcion" class="form__textarea"
+                        placeholder="Escriba una breve descripcion de su publicación ......"></textarea>
+                </div>
+                <div class="form__group form__group--full-width">
+                    <button type="submit" class="form__button enviarPublicacion">Enviar</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- MAIN -->
+    </section>
+    <!-- CONTENT -->
+    <script src="./js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./js/alertas.js"></script>
+
+</body>
+
+</html>
