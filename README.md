@@ -21,8 +21,9 @@ Este sistema de investigación permite a los investigadores gestionar sus public
 ## Capturas de Pantalla
 
 
-![Texto alternativo](./img/mobile.gif)
-
+<div align="center" style="background-color: white;">
+  <img src="./img/mobile.gif" alt="Sistema de investigación">
+</div>
 
 ## Demo en Vivo
 
