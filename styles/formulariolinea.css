@@ -1,0 +1,89 @@
+.form {
+    display       : flex;
+    flex-direction: column;
+}
+
+.form__row {
+    display      : flex;
+    gap          : 1rem;
+    margin-bottom: 1rem;
+}
+
+.form__group {
+    display       : flex;
+    flex-direction: column;
+}
+
+.form__label {
+    margin-bottom: 0.5rem;
+}
+
+.form__input-container {
+    display       : flex;
+    flex-direction: column;
+}
+
+.form__input {
+    flex-grow: 1;
+    padding  : 0.5rem;
+}
+
+.form__group--file {
+    flex-grow: 1;
+}
+
+.form__group--file {
+    display       : flex;
+    flex-direction: column;
+}
+
+.form__group--file .form__label {
+    margin-bottom: 0.5rem;
+}
+
+.form__group--file .form__input {
+    padding: 0.5rem;
+    border : none;
+}
+
+.form__group--file .form__upload-button {
+    display         : flex;
+    align-items     : center;
+    gap             : 0.5rem;
+    padding         : 0.5rem 1rem;
+    background-color: #3085d6;
+    color           : #fff;
+    border          : none;
+    cursor          : pointer;
+}
+
+.form__group--file .form__upload-button-icon {
+    font-size: 1.2rem;
+}
+
+
+.formu__button {
+    padding         : 0.5rem;
+    background-color: #3085d6;
+    color           : #fff;
+    border          : none;
+    cursor          : pointer;
+}
+
+.form__button-icon {
+    font-size: 1.2rem;
+}
+
+.botonEnviar {
+    width           : 28.4%;
+    background-color: #3085d6;
+    color           : #fff;
+    border          : none;
+    cursor          : pointer;
+    padding         : 0.5rem;
+}
+
+ol,
+ul {
+    padding-left: 1px;
+}
