@@ -20,7 +20,9 @@ Este sistema de investigación permite a los investigadores gestionar sus public
 
 ## Capturas de Pantalla
 
-(Inserta aquí algunas capturas de pantalla de tu sistema)
+
+![Texto alternativo](./img/mobile.gif)
+
 
 ## Demo en Vivo
 
