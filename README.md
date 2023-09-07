@@ -27,7 +27,7 @@ Este sistema de investigación permite a los investigadores gestionar sus public
 
 ## Demo en Vivo
 
-Puedes acceder a una demo en vivo del sistema [aquí](enlace-demo).
+Puedes acceder a una demo en vivo del sistema [aquí](https://kevinrivera1.github.io/Sistema-Investigacion/).
 
 ## Tecnologías Utilizadas
 
