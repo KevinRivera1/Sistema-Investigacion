@@ -683,3 +683,38 @@ body {
 section.d-flex.section__container-card {
     height: 100%;
 }
+
+
+/* Estilo del interruptor de modo oscuro */
+#switch-mode {
+    display: none;
+}
+
+/* Estilo del contenedor del interruptor */
+label[for="switch-mode"] {
+    position: relative;
+    display : inline-block;
+    width   : 60px;
+    height  : 34px;
+}
+
+/* Estilo del indicador del interruptor */
+label[for="switch-mode"]::before {
+    content         : "";
+    position        : absolute;
+    width           : 26px;
+    height          : 26px;
+    background-color: #fff;
+    /* Color del indicador cuando está apagado */
+    border-radius   : 50%;
+    left            : 4px;
+    top             : 4px;
+    transition      : 0.4s;
+}
+
+/* Cambia el fondo del indicador cuando el interruptor está encendido */
+#switch-mode:checked+label[for="switch-mode"]::before {
+    left            : 30px;
+    background-color: #007BFF;
+    /* Color del indicador cuando está encendido */
+}
